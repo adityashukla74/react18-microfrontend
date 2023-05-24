@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkcomprehensive_demo_react18_app_02"] = self["webpackChunkcomprehensive_demo_react18_app_02"] || []).push([[542],{
 
-/***/ 577:
+/***/ 828:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 /**
@@ -359,7 +359,7 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(577);
+  module.exports = __webpack_require__(828);
 } else {}
 
 

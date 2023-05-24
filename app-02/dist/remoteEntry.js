@@ -3,15 +3,18 @@ var app_02;
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 55:
+/***/ "webpack/container/entry/app_02":
+/*!***********************!*\
+  !*** container entry ***!
+  \***********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 var moduleMap = {
 	"./Dialog": () => {
-		return Promise.all([__webpack_require__.e(795), __webpack_require__.e(929)]).then(() => (() => ((__webpack_require__(929)))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_material-ui_core_material-ui_core-webpack_sharing_consume_def-9f1d0f"), __webpack_require__.e("src_Dialog_jsx")]).then(() => (() => ((__webpack_require__(/*! ./src/Dialog */ "./src/Dialog.jsx")))));
 	},
 	"./Tabs": () => {
-		return Promise.all([__webpack_require__.e(795), __webpack_require__.e(695), __webpack_require__.e(186)]).then(() => (() => ((__webpack_require__(186)))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_material-ui_core_material-ui_core-webpack_sharing_consume_def-9f1d0f"), __webpack_require__.e("webpack_sharing_consume_default_react-router-dom_react-router-dom"), __webpack_require__.e("src_Tabs_jsx")]).then(() => (() => ((__webpack_require__(/*! ./src/Tabs */ "./src/Tabs.jsx")))));
 	}
 };
 var get = (module, getScope) => {
@@ -43,7 +46,10 @@ __webpack_require__.d(exports, {
 
 /***/ }),
 
-/***/ 632:
+/***/ "webpack/container/reference/app_03":
+/*!**************************************************************!*\
+  !*** external "app_03@http://localhost:3003/remoteEntry.js" ***!
+  \**************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var __webpack_error__ = new Error();
@@ -77,13 +83,16 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -245,18 +254,27 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nmd = (module) => {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/remotes loading */
 /******/ 	(() => {
 /******/ 		var chunkMapping = {
-/******/ 			"44": [
-/******/ 				44
+/******/ 			"webpack_container_remote_app_03_Button": [
+/******/ 				"webpack/container/remote/app_03/Button"
 /******/ 			]
 /******/ 		};
 /******/ 		var idToExternalAndNameMapping = {
-/******/ 			"44": [
+/******/ 			"webpack/container/remote/app_03/Button": [
 /******/ 				"default",
 /******/ 				"./Button",
-/******/ 				632
+/******/ 				"webpack/container/reference/app_03"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -343,11 +361,11 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			var promises = [];
 /******/ 			switch(name) {
 /******/ 				case "default": {
-/******/ 					register("@material-ui/core", "4.12.4", () => (Promise.all([__webpack_require__.e(758), __webpack_require__.e(992)]).then(() => (() => (__webpack_require__(758))))));
-/******/ 					register("react-dom", "18.2.0", () => (Promise.all([__webpack_require__.e(542), __webpack_require__.e(850)]).then(() => (() => (__webpack_require__(542))))));
-/******/ 					register("react-router-dom", "5.3.4", () => (Promise.all([__webpack_require__.e(113), __webpack_require__.e(682)]).then(() => (() => (__webpack_require__(113))))));
-/******/ 					register("react", "18.2.0", () => (__webpack_require__.e(378).then(() => (() => (__webpack_require__(378))))));
-/******/ 					initExternal(632);
+/******/ 					register("@material-ui/core", "4.12.4", () => (Promise.all([__webpack_require__.e("vendors-node_modules_babel_runtime_helpers_esm_extends_js-node_modules_babel_runtime_helpers_-91be28"), __webpack_require__.e("vendors-node_modules_material-ui_core_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react-dom-3acfd7")]).then(() => (() => (__webpack_require__(/*! ../node_modules/@material-ui/core/esm/index.js */ "../node_modules/@material-ui/core/esm/index.js"))))));
+/******/ 					register("react-dom", "18.2.0", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_e9c8")]).then(() => (() => (__webpack_require__(/*! ../node_modules/react-dom/index.js */ "../node_modules/react-dom/index.js"))))));
+/******/ 					register("react-router-dom", "5.3.4", () => (Promise.all([__webpack_require__.e("vendors-node_modules_babel_runtime_helpers_esm_extends_js-node_modules_babel_runtime_helpers_-91be28"), __webpack_require__.e("vendors-node_modules_react-router-dom_esm_react-router-dom_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_3e6e")]).then(() => (() => (__webpack_require__(/*! ../node_modules/react-router-dom/esm/react-router-dom.js */ "../node_modules/react-router-dom/esm/react-router-dom.js"))))));
+/******/ 					register("react", "18.2.0", () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! ../node_modules/react/index.js */ "../node_modules/react/index.js"))))));
+/******/ 					initExternal("webpack/container/reference/app_03");
 /******/ 				}
 /******/ 				break;
 /******/ 			}
@@ -511,36 +529,36 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		});
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
-/******/ 			21: () => (loadSingletonVersionCheckFallback("default", "react", [,[1,17,0,0],[1,16,8,0],1], () => (__webpack_require__.e(378).then(() => (() => (__webpack_require__(378))))))),
-/******/ 			734: () => (loadSingletonVersionCheckFallback("default", "react", [0,16,6,0], () => (__webpack_require__.e(378).then(() => (() => (__webpack_require__(378))))))),
-/******/ 			740: () => (loadSingletonVersionCheckFallback("default", "react-dom", [0,16,6,0], () => (Promise.all([__webpack_require__.e(542), __webpack_require__.e(850)]).then(() => (() => (__webpack_require__(542))))))),
-/******/ 			946: () => (loadSingletonVersionCheckFallback("default", "react-dom", [,[1,17,0,0],[1,16,8,0],1], () => (Promise.all([__webpack_require__.e(542), __webpack_require__.e(850)]).then(() => (() => (__webpack_require__(542))))))),
-/******/ 			850: () => (loadSingletonVersionCheckFallback("default", "react", [1,18,2,0], () => (__webpack_require__.e(378).then(() => (() => (__webpack_require__(378))))))),
-/******/ 			682: () => (loadSingletonVersionCheckFallback("default", "react", [0,15], () => (__webpack_require__.e(378).then(() => (() => (__webpack_require__(378))))))),
-/******/ 			613: () => (loadSingletonVersionCheckFallback("default", "react", [4,18,2,0], () => (__webpack_require__.e(378).then(() => (() => (__webpack_require__(378))))))),
-/******/ 			782: () => (loadSingletonVersionCheckFallback("default", "@material-ui/core", [1,4,9,4], () => (Promise.all([__webpack_require__.e(758), __webpack_require__.e(992)]).then(() => (() => (__webpack_require__(758))))))),
-/******/ 			695: () => (loadSingletonVersionCheckFallback("default", "react-router-dom", [1,5,1,2], () => (Promise.all([__webpack_require__.e(113), __webpack_require__.e(682)]).then(() => (() => (__webpack_require__(113)))))))
+/******/ 			"webpack/sharing/consume/default/react/react?2f5c": () => (loadSingletonVersionCheckFallback("default", "react", [,[1,17,0,0],[1,16,8,0],1], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react-dom/react-dom?511c": () => (loadSingletonVersionCheckFallback("default", "react-dom", [,[1,17,0,0],[1,16,8,0],1], () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_e9c8")]).then(() => (() => (__webpack_require__(/*! react-dom */ "../node_modules/react-dom/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react/react?167c": () => (loadSingletonVersionCheckFallback("default", "react", [0,16,6,0], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react-dom/react-dom?bffe": () => (loadSingletonVersionCheckFallback("default", "react-dom", [0,16,6,0], () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_e9c8")]).then(() => (() => (__webpack_require__(/*! react-dom */ "../node_modules/react-dom/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react/react?e9c8": () => (loadSingletonVersionCheckFallback("default", "react", [1,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react/react?3e6e": () => (loadSingletonVersionCheckFallback("default", "react", [0,15], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react/react?6aa0": () => (loadSingletonVersionCheckFallback("default", "react", [4,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/@material-ui/core/@material-ui/core": () => (loadSingletonVersionCheckFallback("default", "@material-ui/core", [1,4,9,4], () => (Promise.all([__webpack_require__.e("vendors-node_modules_babel_runtime_helpers_esm_extends_js-node_modules_babel_runtime_helpers_-91be28"), __webpack_require__.e("vendors-node_modules_material-ui_core_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react-dom-3acfd7")]).then(() => (() => (__webpack_require__(/*! @material-ui/core */ "../node_modules/@material-ui/core/esm/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react-router-dom/react-router-dom": () => (loadSingletonVersionCheckFallback("default", "react-router-dom", [1,5,1,2], () => (Promise.all([__webpack_require__.e("vendors-node_modules_babel_runtime_helpers_esm_extends_js-node_modules_babel_runtime_helpers_-91be28"), __webpack_require__.e("vendors-node_modules_react-router-dom_esm_react-router-dom_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_3e6e")]).then(() => (() => (__webpack_require__(/*! react-router-dom */ "../node_modules/react-router-dom/esm/react-router-dom.js")))))))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
-/******/ 			"682": [
-/******/ 				682
+/******/ 			"webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react-dom-3acfd7": [
+/******/ 				"webpack/sharing/consume/default/react/react?2f5c",
+/******/ 				"webpack/sharing/consume/default/react-dom/react-dom?511c",
+/******/ 				"webpack/sharing/consume/default/react/react?167c",
+/******/ 				"webpack/sharing/consume/default/react-dom/react-dom?bffe"
 /******/ 			],
-/******/ 			"695": [
-/******/ 				695
+/******/ 			"webpack_sharing_consume_default_react_react-_e9c8": [
+/******/ 				"webpack/sharing/consume/default/react/react?e9c8"
 /******/ 			],
-/******/ 			"795": [
-/******/ 				613,
-/******/ 				782
+/******/ 			"webpack_sharing_consume_default_react_react-_3e6e": [
+/******/ 				"webpack/sharing/consume/default/react/react?3e6e"
 /******/ 			],
-/******/ 			"850": [
-/******/ 				850
+/******/ 			"webpack_sharing_consume_default_material-ui_core_material-ui_core-webpack_sharing_consume_def-9f1d0f": [
+/******/ 				"webpack/sharing/consume/default/react/react?6aa0",
+/******/ 				"webpack/sharing/consume/default/@material-ui/core/@material-ui/core"
 /******/ 			],
-/******/ 			"992": [
-/******/ 				21,
-/******/ 				734,
-/******/ 				740,
-/******/ 				946
+/******/ 			"webpack_sharing_consume_default_react-router-dom_react-router-dom": [
+/******/ 				"webpack/sharing/consume/default/react-router-dom/react-router-dom"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.consumes = (chunkId, promises) => {
@@ -580,7 +598,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			824: 0
+/******/ 			"app_02": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
@@ -592,7 +610,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^([67]95|44|682|850|992)$/.test(chunkId)) {
+/******/ 						if(/^(src_(Dialog|Tabs)_jsx|vendors\-node_modules_(react((|\-dom)_index|\-router\-dom_esm_react\-router\-dom)_js|babel_runtime_helpers_esm_extends_js\-node_modules_babel_runtime_helpers_\-91be28|material\-ui_core_esm_index_js)|app_02)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
@@ -667,7 +685,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(55);
+/******/ 	var __webpack_exports__ = __webpack_require__("webpack/container/entry/app_02");
 /******/ 	app_02 = __webpack_exports__;
 /******/ 	
 /******/ })()
