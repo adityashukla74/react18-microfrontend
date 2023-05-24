@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkcomprehensive_demo_react18_app_01"] = self["webpackChunkcomprehensive_demo_react18_app_01"] || []).push([["src_bootstrap_jsx"],{
+(self["webpackChunkreact_18_app_01"] = self["webpackChunkreact_18_app_01"] || []).push([["src_bootstrap_jsx"],{
 
 /***/ "./src/App.jsx":
 /*!*********************!*\

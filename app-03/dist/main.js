@@ -167,7 +167,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	/* webpack/runtime/load script */
 /******/ 	(() => {
 /******/ 		var inProgress = {};
-/******/ 		var dataWebpackPrefix = "comprehensive-demo-react18_app-03:";
+/******/ 		var dataWebpackPrefix = "react-18_app-03:";
 /******/ 		// loadScript function to load a script via script tag
 /******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
 /******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
@@ -307,7 +307,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			// runs all init snippets from all modules reachable
 /******/ 			var scope = __webpack_require__.S[name];
 /******/ 			var warn = (msg) => (typeof console !== "undefined" && console.warn && console.warn(msg));
-/******/ 			var uniqueName = "comprehensive-demo-react18_app-03";
+/******/ 			var uniqueName = "react-18_app-03";
 /******/ 			var register = (name, version, factory, eager) => {
 /******/ 				var versions = scope[name] = scope[name] || {};
 /******/ 				var activeVersion = versions[version];
@@ -625,7 +625,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkcomprehensive_demo_react18_app_03"] = self["webpackChunkcomprehensive_demo_react18_app_03"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkreact_18_app_03"] = self["webpackChunkreact_18_app_03"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

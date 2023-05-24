@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkcomprehensive_demo_react18_app_01"] = self["webpackChunkcomprehensive_demo_react18_app_01"] || []).push([[576],{
+(self["webpackChunkreact_18_app_01"] = self["webpackChunkreact_18_app_01"] || []).push([[576],{
 
 /***/ 8943:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {

@@ -1,4 +1,4 @@
-(self["webpackChunkcomprehensive_demo_react18_app_01"] = self["webpackChunkcomprehensive_demo_react18_app_01"] || []).push([[113],{
+(self["webpackChunkreact_18_app_01"] = self["webpackChunkreact_18_app_01"] || []).push([[113],{
 
 /***/ 9603:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
